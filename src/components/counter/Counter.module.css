@@ -1,0 +1,27 @@
+.main{
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+}
+.btn{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: darkgoldenrod;
+    color: black;
+    border-radius: 20px;
+    font-size: inherit;
+}
+.btn:hover{
+    background-color: black;
+    border:1px solid darkgoldenrod;
+    color: darkgoldenrod;
+}
+.count{
+    font-size: 30px;
+    color: darkgoldenrod;
+    display: block;
+}
