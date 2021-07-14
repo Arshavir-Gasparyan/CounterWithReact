@@ -8,7 +8,14 @@ class App extends Component {
     minStep: 10,
     maxStep: 100,
   };
-
+componentDidMount(){
+  this.setState({
+    value:Number(localStorage.getItem('value'))
+  })
+}
+componentDidUpdate(){
+  localStorage.setItem("value",this.state.value)
+}
   nextCount = () => {
     if (this.state.value < this.state.maxStep)
       this.setState({
@@ -42,7 +49,7 @@ class App extends Component {
       maxStep: Number(event.target.value),
     });
   };
-  render() {
+  render() {    
     return (
       <>
         <Counter
